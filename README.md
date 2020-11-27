@@ -1,8 +1,8 @@
-# Mini Cooper Makes and Models
+# Mini Cooper App
 Vue and Dynamic Content
 
 ![header image](/images/mini.jpg " MINI 3 DOOR")
-EXPLORE MORE CORNERS.
+If you want to know more about MINI Cooper 3, Mini Cooper App is a good choice for you. This App include all Mini 3  models and it detail information, such as height, weight, top speed, price and wheel... you will find the latest news of Mini.Click VIEW DETAILS button to gain more detail information.
  `Click images in app  will help you gain more information about mini.`<br />
 [Project Roadmap](https://docs.google.com/document/d/1RWPXizD14y1B96HBsfQrkJM9EXluUjSgxPPgz4rqafM/edit?usp=sharing) is here.
 
@@ -33,6 +33,11 @@ EXPLORE MORE CORNERS.
 * MySQL
 * Vue
 * Javascript
+
+## Code Examples
+* Compile SASS into CSS file: `sass --watch sass:css --style compressed` or `sass --watch sass:css`
+* Make an AJAX request using Fetch API: ` fetchdata("./includes/index.php").then(data=>{ data.forEach(mini=>this.minis.push(mini))}) .catch(err=>console.error(err));`
+* Use Vue: `<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>`
 
 ## Author
 Zhu Meng

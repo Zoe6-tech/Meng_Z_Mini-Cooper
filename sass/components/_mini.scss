@@ -1,0 +1,28 @@
+.show-mini{
+    padding: 8px 12px;
+    color: white;
+    background-color:black;
+    border: thin soild #8b0000;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    border-radius: 8px;
+    
+    &:hover{
+        background-color: #8b0000;
+    };
+}
+
+.mini-button-modifier{
+     text-decoration: none;
+}
+
+.mini-data{
+    display: none;
+}
+
+.show-mini{
+    display: block !important;
+    // tell css to apply this role, most important role
+    
+}

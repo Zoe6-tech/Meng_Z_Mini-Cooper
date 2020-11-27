@@ -1,31 +1,3 @@
-.show-mini{
-    padding: 8px 12px;
-    color: white;
-    background-color: #333;
-    border: thin soild blue;
-    text-transform: uppercase;
-    cursor: pointer;
-
-    border-radius: 8px;
-    
-    &:hover{
-        background-color: blue;
-    };
-}
-
-.mini-button-modifier{
-     text-decoration: none;
-}
-
-.mini-data{
-    display: none;
-}
-
-.show-mini{
-    display: block !important;
-    // tell css to apply this role, most important role
-}
-a{
-    width: 130px;
-    text-align: center;
-}
+@import "components/_mini.scss";
+@import "components/_vars.scss";
+@import "components/_main.scss";
