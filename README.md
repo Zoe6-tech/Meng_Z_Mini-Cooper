@@ -6,7 +6,7 @@ EXPLORE MORE CORNERS.
  `Click images in app  will help you gain more information about mini.`<br />
 [Project Roadmap](https://docs.google.com/document/d/1RWPXizD14y1B96HBsfQrkJM9EXluUjSgxPPgz4rqafM/edit?usp=sharing) is here.
 
-## Description
+## Assignment Description
 1. Use SASS, Vue, AJAX, databases and Fetch to create a dynamic one-page app based on our class build. 
 2. Click on one of the Mini models to show more content / data about that model. 
 3. Use Vue lifecycle hooks, components, and AJAX where appropriate.
