@@ -18,8 +18,8 @@
             <li v-for="mini in minis"><!--tell Vue what to do , every row -->
                 <!--render this array, this paragraph-->
                <p v-on:click="logClicked">
-                   Model: {{mini.Model}}<br><!--"mini" in minis-->
-                   Price: {{mini.Price}}
+                  {{mini.mini_Model}}<br><!--"mini" in minis-->
+                  All-Inclusive Price:  {{mini.mini_Price}}
                 </p><!--everything out of {{}} will rendered as html text-->
                 <a href="" class="show-mini" @click.prevent="addMiniData(mini)"  
                 v-bind:class="{'mini-button-modifier': removeAformat}">View Detail</a><!--View {{mini.Model}}-->
@@ -30,8 +30,7 @@
         <section class="mini-data" v-bind:class="{'show-mini':showMiniData}">
             <!--apply show-bio if show-bio-data is true-->
             <p>
-                This is mini detail info.This is mini detail info.This is mini detail info.
-            </p>
+              This is detail information. </p>
         </section>
     </main>
 </body>
