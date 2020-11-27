@@ -1,9 +1,9 @@
 # Mini Cooper Makes and Models
 Vue and Dynamic Content
 
-![header image](/images/mini3.jpg " MINI 3 DOOR")
+![header image](/images/mini.jpg " MINI 3 DOOR")
 EXPLORE MORE CORNERS.
- `Click images in app  will help you gain more information about nimaes.`<br />
+ `Click images in app  will help you gain more information about mini.`<br />
 [Project Roadmap](https://docs.google.com/document/d/1RWPXizD14y1B96HBsfQrkJM9EXluUjSgxPPgz4rqafM/edit?usp=sharing) is here.
 
 ## Description
