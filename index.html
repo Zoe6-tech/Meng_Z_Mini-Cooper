@@ -10,27 +10,34 @@
 </head>
 <body>
     <main id=app>
-        <img src="images/logo.png" alt="Mini Cooper logo" > 
+        <img class="logo" src="images/logo.png" alt="Mini Cooper logo" > 
+        <div class="message">
         <h1 @click="clickHeader">{{ message }} </h1> <!-- @=v-on:-->
-        <p>{{anotherMessage}}</p>
+        <p class="anotherMessage">{{anotherMessage}}</p>
+        </div>
         <!--show the prof data in prof array-->
-        <ul>
+        <ul class="models">
             <li v-for="mini in minis"><!--tell Vue what to do , every row -->
                 <!--render this array, this paragraph-->
-               <p v-on:click="logClicked">
-                  {{mini.mini_Model}}<br><!--"mini" in minis-->
-                  All-Inclusive Price:  {{mini.mini_Price}}
-                </p><!--everything out of {{}} will rendered as html text-->
+                <img :src=" 'images/' + mini.mini_Image " alt='mini.mini_ShortName+"image"'>
+               <h2 v-on:click="logClicked"> 
+                  {{mini.mini_ShortName}}<br><!--"mini" in minis-->
+                  <!-- All-Inclusive Price:  {{mini.mini_Price}} -->
+               </h2><!--everything out of {{}} will rendered as html text-->
                 <a href="" class="show-mini" @click.prevent="addMiniData(mini)"  
-                v-bind:class="{'mini-button-modifier': removeAformat}">View Detail</a><!--View {{mini.Model}}-->
+                v-bind:class="{'mini-button-modifier': removeAformat}">VIEW DETAILS</a><!--View {{mini.Model}}-->
                 <!--prevent:not refresh page after click-->
             </li>
         </ul>
         
         <section class="mini-data" v-bind:class="{'show-mini':showMiniData}">
             <!--apply show-bio if show-bio-data is true-->
-            <p>
-              This is detail information. </p>
+            <h2>{{ currentMiniData.mini_Model}}</h2>
+            <h3>All-Inclusive Price: {{ currentMiniData.mini_Price}}</h3>
+            <p>Engine Architecture: {{ currentMiniData.mini_Engine}}</p>
+            <p>Top Speed (km / h): {{ currentMiniData.mini_TopSpeed}}</p>
+            <p>Wheels: {{ currentMiniData.mini_Wheels}}</p>
+            <p>Dimensions Length/Width/Height (mm): {{ currentMiniData.mini_Dimensions}}</p>
         </section>
     </main>
 </body>

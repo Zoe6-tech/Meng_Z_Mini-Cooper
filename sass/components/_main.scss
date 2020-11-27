@@ -1,0 +1,46 @@
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+.message{
+    background-color: $black;
+    color: $white;
+    height: 150px;
+}
+h1{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.anotherMessage{
+    margin-left: auto;
+    margin-right: auto;
+    width:1200px;
+    text-align: center;
+}
+
+a{
+    width: 115px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.models{
+    display: flex;
+    flex-direction: row;
+}
+
+ul li{
+    list-style-type: none;
+    padding: 0 20px;
+    img{
+        width: 300px;
+    }
+    h2{
+        text-align: center;
+    }
+}
+
