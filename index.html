@@ -6,21 +6,33 @@
     <title>Wroking with Vue</title>
     <!-- development version, includes helpful console warnings -->
    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-
+   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <main id=app>
         <img src="images/logo.png" alt="Mini Cooper logo" > 
-        <h1 @click="clickHeader">{{ message }} </h1> <!-- v-on-->
+        <h1 @click="clickHeader">{{ message }} </h1> <!-- @=v-on:-->
         <p>{{anotherMessage}}</p>
         <!--show the prof data in prof array-->
         <ul>
-            <li v-for="mini in minis">
+            <li v-for="mini in minis"><!--tell Vue what to do , every row -->
+                <!--render this array, this paragraph-->
                <p v-on:click="logClicked">
-                   Model: {{mini.Model}}<br>
-                   Price: {{mini.Price}}</p><!--everything out of {{}} will rendered as html text-->
+                   Model: {{mini.Model}}<br><!--"mini" in minis-->
+                   Price: {{mini.Price}}
+                </p><!--everything out of {{}} will rendered as html text-->
+                <a href="" class="show-mini" @click.prevent="addMiniData(mini)"  
+                v-bind:class="{'mini-button-modifier': removeAformat}">View Detail</a><!--View {{mini.Model}}-->
+                <!--prevent:not refresh page after click-->
             </li>
         </ul>
+        
+        <section class="mini-data" v-bind:class="{'show-mini':showMiniData}">
+            <!--apply show-bio if show-bio-data is true-->
+            <p>
+                This is mini detail info.This is mini detail info.This is mini detail info.
+            </p>
+        </section>
     </main>
 </body>
 <script src="js/main.js" type="module"></script>
