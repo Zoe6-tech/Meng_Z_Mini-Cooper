@@ -2,8 +2,7 @@
 Vue and Dynamic Content
 
 ![header image](/images/mini.jpg " MINI 3 DOOR")
-If you want to know more about MINI Cooper 3, Mini Cooper App is a good choice for you. This App include all Mini 3  models and it detail information, such as height, weight, top speed, price and wheel... you will find the latest news of Mini.Click VIEW DETAILS button to gain more detail information.
- `Click images in app  will help you gain more information about mini.`<br />
+If you want to know more about MINI Cooper 3, Mini Cooper App is a good choice for you. This App include all Mini 3  models and it detail information, such as height, weight, top speed, price and wheel... you will find the latest news of Mini.`Click VIEW DETAILS button to gain more detail information.`<br />
 [Project Roadmap](https://docs.google.com/document/d/1RWPXizD14y1B96HBsfQrkJM9EXluUjSgxPPgz4rqafM/edit?usp=sharing) is here.
 
 ## Assignment Description
